@@ -18,3 +18,11 @@ body {
 .widthDiv {
     width: 12 rem;
 }
+
+#mePic {
+    height: 566px;
+}
+
+.meInfo {
+    border: #de1d5a solid 2px;
+}
