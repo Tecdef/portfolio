@@ -1,5 +1,20 @@
 body {
-    font-family: 'Titillium Web', sans-serif;
-
+    font-family: 'Nova Square', cursive;
+    background: url(../images/annie-spratt-W58TYhki3nU-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
+.name {
+    color: #de1d5a;
+}
+
+.aboutIcon {
+    color: #de1d5a;
+    border-bottom: #de1d5a 6px solid;
+}
+
+.widthDiv {
+    width: 12 rem;
+}
