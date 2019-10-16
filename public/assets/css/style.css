@@ -30,3 +30,12 @@ body {
 .socialIcon {
     color: #de1d5a;
 }
+
+.statsList {
+    border: solid 1px black;
+}
+
+.fill {
+    background: #de1d5a;
+}
+
