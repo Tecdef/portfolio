@@ -8,8 +8,8 @@
     <title>Steven Hofheins Port.</title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/tailwind.css">
-    <script src="https://kit.fontawesome.com/4d4428ecea.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Nova+Square&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4d4428ecea.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -18,29 +18,32 @@
     <div class="container-flex">
         <!-- div to make window screensize height -->
         <div class="h-screen ">
-                <div class="flex">
-                        <div class="w-full mt-2 text-4xl text-right">
-                              <a href="https://instagram.com/tec_def"> <i id="instagram" class="fab socialIcon fa-instagram"></i> </a>
-                              <a href="https://www.linkedin.com/in/steven-hofheins/"> <i id="linkedin" class="fab socialIcon fa-linkedin"></i></a>
-                             <a href="https://github.com/Tecdef"> <i id="github" class="fab socialIcon mr-4 fa-github-square"></i></a>
-                        </div>
-                      </div>
+            <div class="flex">
+                <div class="w-full mt-2 text-4xl text-right">
+                    <a target="_blank" href="https://instagram.com/tec_def"> <i id="instagram" class="fab socialIcon fa-instagram"></i>
+                    </a>
+                    <a target="_blank" href="https://www.linkedin.com/in/steven-hofheins/"> <i id="linkedin"
+                            class="fab socialIcon fa-linkedin"></i></a>
+                    <a target="_blank" href="https://github.com/Tecdef"> <i id="github"
+                            class="fab socialIcon mr-4 fa-github-square"></i></a>
+                </div>
+            </div>
             <!-- Top Screen Intro and Button -->
             <div class="mt-64 text-5xl w-full text-center">
                 <p>Hello, I'm <text class="name">Steven Hofheins.</text></p>
                 I'm a Full-Stack Web Developer.
             </div>
             <div class="w-full text-center mt-1">
-                <button
+                <button id="mainBut"
                     class="hover:bg-gray-200 hover:border-gray-800 text-black font-semibold py-4 px-4 border-2 border-b-8 border-black rounded shadow">
                     Want To See More?
                 </button>
             </div>
         </div>
-            <!-- End of Top Page -->
+        <!-- End of Top Page -->
 
-            <!--  -->
-        <nav class="flex mt-48 items-center justify-between flex-wrap bg-black p-6">
+        <!--  -->
+        <nav id="topNav" class="flex mt-48 items-center justify-between flex-wrap bg-black p-6">
             <div class="flex items-center flex-shrink-0 text-white mr-6">
                 <img class="fill-current h-8 w-8 mr-2" src="assets/images/zlogo.png" alt="logo">
                 <span class="font-semibold text-xl tracking-tight">Steven Hofheins</span>
@@ -58,7 +61,7 @@
 
             <div class="ml-auto mr-1">
                 <a href="portolio.html"
-                    class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Portfolio</a>
+                    class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Projects</a>
             </div>
             <div class="mr-1">
                 <a href="contact.html"
@@ -95,11 +98,11 @@
 
             <div class="flex mt-32">
                 <div class="w-1/2 text-center">
-                    <img id="mePic" class="object-cover mx-auto border-0 rounded-lg " src="./assets/images/me.png"
+                    <img id="mePic" class="object-cover mb-1 mx-auto border-0 rounded-lg " src="./assets/images/me.png"
                         alt="me">
                     <div class="meInfo rounded-lg">
                         <p class=" text-lg mt-1 text-gray-700">Who is this guy?</p>
-                        I currently work for Adobe as a Techincal Engineer in Lehi UT.
+                        I currently work for Adobe as a Techincal Engineer for Adobe Analytics in Lehi UT.
                         I have serious passion for UI effects, animations and creating intuitive, dynamic user
                         experiences.
                     </div>
@@ -116,6 +119,8 @@
         </div>
     </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="./assets/js/port.js"></script>
 </body>
 
