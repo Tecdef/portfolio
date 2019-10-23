@@ -15,11 +15,11 @@
 
 <body>
     <!-- Main Conatiner Div -->
-    <div class="container-flex">
+    <div class="container-flex h-screen relative">
         <!-- div to make window screensize height -->
         <div class="h-screen ">
             <div class="flex">
-                <div class="w-full mt-2 text-4xl text-right">
+                <div class="w-full mt-2 text-4xl fixed text-right">
                     <a target="_blank" href="https://instagram.com/tec_def"> <i id="instagram"
                             class="fab socialIcon fa-instagram"></i>
                     </a>
@@ -40,306 +40,309 @@
                     Want To See More?
                 </button>
             </div>
+            
         </div>
+    </div>
         <!-- End of Top Page -->
-
-        <!--  -->
-        <nav id="topNav" class="flex mt-48 items-center justify-between flex-wrap bg-black p-6">
-            <div class="flex items-center flex-shrink-0 text-white mr-6">
-                <img class="fill-current h-8 w-8 mr-2" src="assets/images/zlogo.png" alt="logo">
-                <span class="font-semibold text-xl tracking-tight">Steven Hofheins</span>
-            </div>
-            <div class="block lg:hidden">
-                <button
-                    class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
-                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <title>Menu</title>
-                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-                    </svg>
-                </button>
-            </div>
-            <div class="ml-auto mr-1">
-                <a href="portolio.html"
-                    class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Portfolio</a>
-            </div>
-            <div class="mr-1">
-                <a href="contact.html"
-                    class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Contact</a>
-            </div>
-            <div class="about.html">
-                <a href="#"
-                    class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">About</a>
-            </div>
-    </div>
-    </nav>
-    <!-- white background -->
-    <div class="bg-white container-flex">
-        <!--  container of about page -->
-        <div class="container mx-auto">
-            <div class="flex pt-10">
-                <div class="w-full bg-white border-t-4 border-green-600 h-12 text-5xl w-full text-center">
-                    ABOUT
-                </div>
-            </div>
-            <!-- Icons at top of page -->
-            <div class="flex mt-6">
-                <div class="w-1/3  text-6xl text-center">
-                    <i class="fas  pb-2 aboutIcon fa-laptop-code"></i>
-                    <p class="text-2xl">Open Mindset</p>
-                </div>
-                <div class="w-1/3 text-6xl text-center">
-                    <i class="fas pb-2  aboutIcon fa-pepper-hot"></i>
-                    <p class="text-2xl">Passionate</p>
-                </div>
-                <div class="w-1/3 text-6xl text-center">
-                    <i class="fas pb-2  aboutIcon fa-fire"></i>
-                    <p class="text-2xl"> Creative</p>
-                </div>
-            </div>
-            <!-- About Me and Image Info -->
-            <div class="flex pb-12 mt-16">
-                <div class="w-1/2 text-center">
-                    <img id="mePic" class="object-cover mb-1 mx-auto border-0 rounded-lg " src="./assets/images/me.png"
-                        alt="me">
-                    <div class="meInfo mx-16 rounded-lg">
-                        <p class="text-lg mt-1 text-gray-700">Who is this guy?</p>
-                        I currently work for Adobe as a Techincal Engineer for Adobe Analytics in Lehi UT.
-                        I have serious passion for UI effects, animations and creating intuitive, dynamic user
-                        experiences.
+        <!-- white background -->
+        <div class="bg-white container-flex">
+                <nav id="topNav" class="flex items-center justify-between flex-wrap bg-black p-6">
+                        <div class="flex items-center flex-shrink-0 text-white mr-6">
+            
+                            <span class="font-semibold text-xl tracking-tight">Steven Hofheins</span>
+                        </div>
+                        <div class="block lg:hidden">
+                            <button
+                                class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+                                <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <title>Menu</title>
+                                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+                            <div class="text-sm lg:flex-grow">
+                                <a id="about" 
+                                    class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+                                    About
+                                </a>
+                                <a id="port" 
+                                    class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+                                    Portfolio
+                                </a>
+                                <a id="contact" 
+                                    class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white">
+                                    Contact
+                                </a>
+                            </div>
+                        </div>
+                    </nav>
+            <!--  container of about page -->
+            <div class="container mx-auto">
+                <div class="flex pt-10">
+                    <div class="w-full bg-white border-t-4 border-green-600 h-12 text-5xl w-full text-center">
+                        ABOUT
                     </div>
                 </div>
-                <!-- Stats Container -->
-                <div class="w-1/2">
-                    <div class="flex mb-4 bg-gray-200 ">
-                        <div class="bg-orange-400" style="width:90%">
-                            <div class="statName text-3xl text-white flex">HTML</div>
-                        </div>
-                        <span class="text-3xl">90%</span>
+                <!-- Icons at top of page -->
+                <div class="flex mt-6">
+                    <div class="w-1/3  text-6xl text-center">
+                        <i class="fas  pb-2 aboutIcon fa-laptop-code"></i>
+                        <p class="text-2xl">Open Mindset</p>
                     </div>
-
-                    <div class="flex mb-4 bg-gray-200 ">
-                        <div class="bg-orange-400" style="width:78%">
-                            <div class="statName text-3xl text-white flex">CSS</div>
-                        </div>
-                        <span class="text-3xl">78%</span>
+                    <div class="w-1/3 text-6xl text-center">
+                        <i class="fas pb-2  aboutIcon fa-pepper-hot"></i>
+                        <p class="text-2xl">Passionate</p>
                     </div>
-
-                    <div class="flex mb-4 bg-gray-200 ">
-                        <div class="bg-orange-400" style="width:60%">
-                            <div class="statName text-3xl text-white flex">Node.js</div>
-                        </div>
-                        <span class="text-3xl">60%</span>
+                    <div class="w-1/3 text-6xl text-center">
+                        <i class="fas pb-2  aboutIcon fa-fire"></i>
+                        <p class="text-2xl"> Creative</p>
                     </div>
-
-                    <div class="flex mb-4 bg-gray-200 ">
-                        <div class="bg-orange-400" style="width:80%">
-                            <div class="statName text-3xl text-white flex">jQuery</div>
+                </div>
+                <!-- About Me and Image Info -->
+                <div class="flex pb-12 mt-16">
+                    <div class="w-1/2 text-center">
+                        <img id="mePic" class="object-cover mb-1 mx-auto border-0 rounded-lg "
+                            src="./assets/images/me.png" alt="me">
+                        <div class="meInfo mx-16 rounded-lg">
+                            <p class="text-lg mt-1 text-gray-700">Who is this guy?</p>
+                            I currently work for Adobe as a Techincal Engineer for Adobe Analytics in Lehi UT.
+                            I have serious passion for UI effects, animations and creating intuitive, dynamic user
+                            experiences.
                         </div>
-                        <span class="text-3xl">80%</span>
                     </div>
-
-                    <div class="flex mb-4 bg-gray-200 ">
-                        <div class="bg-orange-400" style="width:60%">
-                            <div class="statName text-3xl text-white flex">Firebase</div>
+                    <!-- Stats Container -->
+                    <div class="w-1/2">
+                        <div class="flex mb-4 bg-gray-200 ">
+                            <div class="bg-orange-400" style="width:90%">
+                                <div class="statName text-3xl text-white flex">HTML</div>
+                            </div>
+                            <span class="text-3xl">90%</span>
                         </div>
-                        <span class="text-3xl">60%</span>
-                    </div>
 
-                    <div class="flex mb-4 bg-gray-200 ">
-                        <div class="bg-orange-400" style="width:90%">
-                            <div class="statName text-3xl text-white flex">Responsive/UI Design</div>
+                        <div class="flex mb-4 bg-gray-200 ">
+                            <div class="bg-orange-400" style="width:78%">
+                                <div class="statName text-3xl text-white flex">CSS</div>
+                            </div>
+                            <span class="text-3xl">78%</span>
                         </div>
-                        <span class="text-3xl">90%</span>
-                    </div>
 
-                    <div class="flex mb-4 bg-gray-200 ">
-                        <div class="bg-orange-400" style="width:95%">
-                            <div class="statName text-3xl text-white flex">Customer Experience</div>
+                        <div class="flex mb-4 bg-gray-200 ">
+                            <div class="bg-orange-400" style="width:60%">
+                                <div class="statName text-3xl text-white flex">Node.js</div>
+                            </div>
+                            <span class="text-3xl">60%</span>
                         </div>
-                        <span class="text-3xl">95%</span>
-                    </div>
 
-                    <div class="flex mb-4 bg-gray-200 ">
-                        <div class="bg-orange-400" style="width:67%">
-                            <div class="statName text-3xl text-white flex">Git</div>
+                        <div class="flex mb-4 bg-gray-200 ">
+                            <div class="bg-orange-400" style="width:80%">
+                                <div class="statName text-3xl text-white flex">jQuery</div>
+                            </div>
+                            <span class="text-3xl">80%</span>
                         </div>
-                        <span class="text-3xl">67%</span>
-                    </div>
 
-                    <div class="flex mb-4 bg-gray-200 ">
-                        <div class="bg-orange-400" style="width:95%">
-                            <div class="statName text-3xl text-white flex">Linux</div>
+                        <div class="flex mb-4 bg-gray-200 ">
+                            <div class="bg-orange-400" style="width:60%">
+                                <div class="statName text-3xl text-white flex">Firebase</div>
+                            </div>
+                            <span class="text-3xl">60%</span>
                         </div>
-                        <span class="text-3xl">95%</span>
-                    </div>
 
-                    <div class="flex mb-4 bg-gray-200 ">
-                        <div class="bg-orange-400" style="width:50%">
-                            <div class="statName text-3xl text-white flex">Adobe Illustrator</div>
+                        <div class="flex mb-4 bg-gray-200 ">
+                            <div class="bg-orange-400" style="width:90%">
+                                <div class="statName text-3xl text-white flex">Responsive/UI Design</div>
+                            </div>
+                            <span class="text-3xl">90%</span>
                         </div>
-                        <span class="text-3xl">50%</span>
-                    </div>
 
-                    <div class="flex mb-4 bg-gray-200 ">
-                        <div class="bg-orange-400" style="width:78%">
-                            <div class="statName text-3xl text-white flex">SEO</div>
+                        <div class="flex mb-4 bg-gray-200 ">
+                            <div class="bg-orange-400" style="width:95%">
+                                <div class="statName text-3xl text-white flex">Customer Experience</div>
+                            </div>
+                            <span class="text-3xl">95%</span>
                         </div>
-                        <span class="text-3xl">78%</span>
-                    </div>
 
-                    <div class="flex mb-4 bg-gray-200 ">
-                        <div class="bg-orange-400" style="width:67%">
-                            <div class="statName text-3xl text-white flex">MySql</div>
+                        <div class="flex mb-4 bg-gray-200 ">
+                            <div class="bg-orange-400" style="width:67%">
+                                <div class="statName text-3xl text-white flex">Git</div>
+                            </div>
+                            <span class="text-3xl">67%</span>
                         </div>
-                        <span class="text-3xl">67%</span>
-                    </div>
 
-                    <div class="flex mb-4 bg-gray-200 ">
-                        <div class="bg-orange-400" style="width:83%">
-                            <div class="statName text-3xl text-white flex">User Auth</div>
+                        <div class="flex mb-4 bg-gray-200 ">
+                            <div class="bg-orange-400" style="width:95%">
+                                <div class="statName text-3xl text-white flex">Linux</div>
+                            </div>
+                            <span class="text-3xl">95%</span>
                         </div>
-                        <span class="text-3xl">83%</span>
+
+                        <div class="flex mb-4 bg-gray-200 ">
+                            <div class="bg-orange-400" style="width:50%">
+                                <div class="statName text-3xl text-white flex">Adobe Illustrator</div>
+                            </div>
+                            <span class="text-3xl">50%</span>
+                        </div>
+
+                        <div class="flex mb-4 bg-gray-200 ">
+                            <div class="bg-orange-400" style="width:78%">
+                                <div class="statName text-3xl text-white flex">SEO</div>
+                            </div>
+                            <span class="text-3xl">78%</span>
+                        </div>
+
+                        <div class="flex mb-4 bg-gray-200 ">
+                            <div class="bg-orange-400" style="width:67%">
+                                <div class="statName text-3xl text-white flex">MySql</div>
+                            </div>
+                            <span class="text-3xl">67%</span>
+                        </div>
+
+                        <div class="flex mb-4 bg-gray-200 ">
+                            <div class="bg-orange-400" style="width:83%">
+                                <div class="statName text-3xl text-white flex">User Auth</div>
+                            </div>
+                            <span class="text-3xl">83%</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container-flex pt-4 h-screen border-t-4 border-solid bg-gray-200">
-        <div class="container mx-auto">
-            <div class="flex pt-10">
-                <div id="projPage" class="w-full text-5xl text-center text-white">
-                    PORTFOLIO
+        <div class="container-flex pt-4 h-screen border-t-4 border-solid bg-gray-200">
+            <div class="container mx-auto">
+                <div class="flex pt-10">
+                    <div id="projPage" class="w-full text-5xl text-center text-white">
+                        PORTFOLIO
+                    </div>
                 </div>
-            </div>
 
-            <div class="flex mt-10">
-                <div class="w-1/3">
-                    <img id="projPic" class="object-cover mb-1 mx-auto border-0 rounded-lg "
-                        src="./assets/images/giphy.png" alt="">
+                <div class="flex mt-10">
+                    <div class="w-1/3">
+                        <img id="projPic" class="object-cover mb-1 mx-auto border-0 rounded-lg "
+                            src="./assets/images/giphy.png" alt="">
+                    </div>
+                    <div class="w-1/3">
+                        <img id="projPic" class="object-cover mb-1 mx-auto border-0 rounded-lg "
+                            src="./assets/images/wdyw.png" alt="">
+                    </div>
+                    <div class="w-1/3">
+                        <img id="projPic" class="object-cover mb-1 mx-auto border-0 rounded-lg "
+                            src="./assets/images/shipapp.png" alt="">
+                    </div>
                 </div>
-                <div class="w-1/3">
-                    <img id="projPic" class="object-cover mb-1 mx-auto border-0 rounded-lg "
-                        src="./assets/images/wdyw.png" alt="">
-                </div>
-                <div class="w-1/3">
-                    <img id="projPic" class="object-cover mb-1 mx-auto border-0 rounded-lg "
-                        src="./assets/images/shipapp.png" alt="">
-                </div>
-            </div>
-            <div class="flex mt-1">
-                <div class="w-1/3 text-center mb-3">
-                    <button id="webButt"
-                        class="hover:bg-gray-200 hover:border-gray-800 text-black font-semibold py-4 px-4 border-2 border-b-8 border-black rounded shadow">
-                        Website
-                    </button>
-                    <button id="gitBut"
-                        class="hover:bg-gray-200 ml-4 hover:border-gray-800 text-black font-semibold py-4 px-4 border-2 border-b-8 border-black rounded shadow">
-                        Git Hub
-                    </button>
-                </div>
-                <div class="w-1/3 text-center mb-3">
-                    <button id="webButt"
-                        class="hover:bg-gray-200 hover:border-gray-800 text-black font-semibold py-4 px-4 border-2 border-b-8 border-black rounded shadow">
-                        Website
-                    </button>
-                    <button id="gitBut"
-                        class="hover:bg-gray-200 ml-4 hover:border-gray-800 text-black font-semibold py-4 px-4 border-2 border-b-8 border-black rounded shadow">
-                        Git Hub
-                    </button>
+                <div class="flex mt-1">
+                    <div class="w-1/3 text-center mb-3">
+                        <button id="webButt"
+                            class="hover:bg-gray-200 hover:border-gray-800 text-black font-semibold py-4 px-4 border-2 border-b-8 border-black rounded shadow">
+                            Website
+                        </button>
+                        <button id="gitBut"
+                            class="hover:bg-gray-200 ml-4 hover:border-gray-800 text-black font-semibold py-4 px-4 border-2 border-b-8 border-black rounded shadow">
+                            Git Hub
+                        </button>
+                    </div>
+                    <div class="w-1/3 text-center mb-3">
+                        <button id="webButt"
+                            class="hover:bg-gray-200 hover:border-gray-800 text-black font-semibold py-4 px-4 border-2 border-b-8 border-black rounded shadow">
+                            Website
+                        </button>
+                        <button id="gitBut"
+                            class="hover:bg-gray-200 ml-4 hover:border-gray-800 text-black font-semibold py-4 px-4 border-2 border-b-8 border-black rounded shadow">
+                            Git Hub
+                        </button>
 
+                    </div>
+                    <div class="w-1/3 text-center mb-3">
+                        <button id="webButt"
+                            class="hover:bg-gray-200 hover:border-gray-800 text-black font-semibold py-4 px-4 border-2 border-b-8 border-black rounded shadow">
+                            Website
+                        </button>
+                        <button id="gitBut"
+                            class="hover:bg-gray-200 ml-4 hover:border-gray-800 text-black font-semibold py-4 px-4 border-2 border-b-8 border-black rounded shadow">
+                            Git Hub
+                        </button>
+                    </div>
                 </div>
-                <div class="w-1/3 text-center mb-3">
-                    <button id="webButt"
-                        class="hover:bg-gray-200 hover:border-gray-800 text-black font-semibold py-4 px-4 border-2 border-b-8 border-black rounded shadow">
-                        Website
-                    </button>
-                    <button id="gitBut"
-                        class="hover:bg-gray-200 ml-4 hover:border-gray-800 text-black font-semibold py-4 px-4 border-2 border-b-8 border-black rounded shadow">
-                        Git Hub
-                    </button>
+                <div class="flex pt-10">
+                    <div id="projPage" class="w-full text-5xl text-center text-white">
+                        DEEPER DIVE
+                    </div>
                 </div>
-            </div>
-            <div class="flex pt-10">
-                <div id="projPage" class="w-full text-5xl text-center text-white">
-                    DEEPER DIVE
-                </div>
-            </div>
 
 
-            <div class="flex mt-6 pb-8">
-                <div class="w-1/2">
-                    <img id="projPic" class="object-cover mb-1 mx-auto border-0 rounded-lg "
-                        src="./assets/images/checkmeout.png" alt="">
-                </div>
-                <!-- resume stuffs -->
-                <div class="w-1/2 h-12">
-                    <button id="webButt"
-                    class="hover:bg-gray-200 w-full mb-6 hover:border-gray-800 text-black font-semibold py-4 px-4 border-2 border-b-8 border-black rounded shadow">
-                    Resume
-                </button>
-                <button id="webButt"
-                class="hover:bg-gray-200 w-full mb-6 hover:border-gray-800 text-black font-semibold py-4 px-4 border-2 border-b-8 border-black rounded shadow">
-                LinkedIN
-            </button>
-            <button id="webButt"
-            class="hover:bg-gray-200 w-full mb-6 hover:border-gray-800 text-black font-semibold py-4 px-4 border-2 border-b-8 border-black rounded shadow">
-            Git Hub
-        </button>
-                
+                <div class="flex mt-6 pb-8">
+                    <div class="w-1/2">
+                        <img id="projPic" class="object-cover mb-1 mx-auto border-0 rounded-lg "
+                            src="./assets/images/checkmeout.png" alt="">
+                    </div>
+                    <!-- resume stuffs -->
+                    <div class="w-1/2 h-12">
+                        <button id="webButt"
+                            class="hover:bg-gray-200 w-full mb-6 hover:border-gray-800 text-black font-semibold py-4 px-4 border-2 border-b-8 border-black rounded shadow">
+                            Resume
+                        </button>
+                        <button id="webButt"
+                            class="hover:bg-gray-200 w-full mb-6 hover:border-gray-800 text-black font-semibold py-4 px-4 border-2 border-b-8 border-black rounded shadow">
+                            LinkedIN
+                        </button>
+                        <button id="webButt"
+                            class="hover:bg-gray-200 w-full mb-6 hover:border-gray-800 text-black font-semibold py-4 px-4 border-2 border-b-8 border-black rounded shadow">
+                            Git Hub
+                        </button>
+
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="container-flex h-screen border-solid border-t-4 border-black bg-white">
-        <div class="container mx-auto">
-            <div class="flex pt-10">
-                <div class="w-full bg-white border-t-4 border-green-600 h-12 text-5xl w-full text-center">
-                    Contact
+        <div class="container-flex h-screen border-solid border-t-4 border-black bg-white">
+            <div class="container mx-auto">
+                <div id="contactPage" class="flex pt-10">
+                    <div class="w-full bg-white border-t-4 border-green-600 h-12 text-5xl w-full text-center">
+                        Contact
+                    </div>
                 </div>
+                <div class="flex-auto w-auto mt-3">
+                    <form class="flex-auto bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+                        <div>
+                            <label class="flex-auto sm:w-1/12 block text-gray-700 text-sm font-bold mb-2"
+                                for="input-name">Name:</label>
+                            <input
+                                class="flex-auto form-control shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight hover:bg-gray-300 focus:outline-none focus:shadow-outline"
+                                id="input-name" type="text">
+                        </div>
+                        <div>
+                            <label class="flex-auto block text-gray-700 text-sm font-bold mb-2"
+                                for="input-dest">Email:</label>
+                            <input
+                                class="flex-auto form-control shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight hover:bg-gray-300 focus:outline-none focus:shadow-outline"
+                                id="input-dest" type="text">
+                        </div>
+                        <div>
+                            <label class="flex-auto block text-gray-700 text-sm font-bold mb-2" for="input-time">
+                                Phone:</label>
+                            <input
+                                class="flex-auto form-control shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight hover:bg-gray-300 focus:outline-none focus:shadow-outline"
+                                id="phone" type="phone">
+                        </div>
+                        <div>
+                            <label class="flex-auto block text-gray-700 text-sm font-bold mb-2"
+                                for="freq-input">Question:</label>
+                            <input
+                                class="flex-auto form-control shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight hover:bg-gray-300 focus:outline-none focus:shadow-outline"
+                                id="input-freq" type="number">
+                        </div>
+                        <button
+                            class="hover:bg-gray-200 hover:border-gray-800 text-black font-semibold py-4 mt-2 px-4 border-2 border-b-8 border-black rounded shadow"
+                            id="add-user" type="submit">Submit</button>
+                    </form>
+                </div>
+
+
+
+
+
             </div>
-            <div class="flex-auto w-auto mt-3">
-                <form class="flex-auto bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-                    <div>
-                        <label class="flex-auto sm:w-1/12 block text-gray-700 text-sm font-bold mb-2"
-                            for="input-name">Name:</label>
-                        <input
-                            class="flex-auto form-control shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight hover:bg-gray-300 focus:outline-none focus:shadow-outline"
-                            id="input-name" type="text">
-                    </div>
-                    <div>
-                        <label class="flex-auto block text-gray-700 text-sm font-bold mb-2"
-                            for="input-dest">Email:</label>
-                        <input
-                            class="flex-auto form-control shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight hover:bg-gray-300 focus:outline-none focus:shadow-outline"
-                            id="input-dest" type="text">
-                    </div>
-                    <div>
-                        <label class="flex-auto block text-gray-700 text-sm font-bold mb-2" for="input-time">
-                            Phone:</label>
-                        <input
-                            class="flex-auto form-control shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight hover:bg-gray-300 focus:outline-none focus:shadow-outline"
-                            id="phone" type="phone">
-                    </div>
-                    <div>
-                        <label class="flex-auto block text-gray-700 text-sm font-bold mb-2"
-                            for="freq-input">Question:</label>
-                        <input
-                            class="flex-auto form-control shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight hover:bg-gray-300 focus:outline-none focus:shadow-outline"
-                            id="input-freq" type="number">
-                    </div>
-                    <button
-                        class="hover:bg-gray-200 hover:border-gray-800 text-black font-semibold py-4 mt-2 px-4 border-2 border-b-8 border-black rounded shadow"
-                        id="add-user" type="submit">Submit</button>
-                </form>
-            </div>
-
-
-
-
-
         </div>
-    </div>
 
 
 

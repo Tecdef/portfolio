@@ -9,4 +9,12 @@ $("#mainBut").click(function() {
         'slow');
 });
 
+$("#contact").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#contactPage").offset().top},
+        'slow');
+});
+
+
+
 });
